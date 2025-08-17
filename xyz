@@ -1,0 +1,23 @@
+print("Welcome to Saras math test:")
+choice=input("Enter a choice:").strip().capitalize()
+print(" Choose a mode: (Easy, Medium, Hard):")
+
+if choice=="Easy":
+    questions=5
+    max_num= 10
+
+elif choice=="Medium":
+    questions=10
+    max_num=20
+
+elif choice=="Hard":
+    questions=15
+    max_num=50
+    
+else:
+    print("Invalid choice.")
+    questions=None
+    max_num=None
+if questions is not None and max_num is not None:
+    print("Questions:", questions)
+    print(" Max_num:", max_num)
