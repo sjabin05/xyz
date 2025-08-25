@@ -1,16 +1,19 @@
 print("Welcome to Saras math test:")
-choice=input("Enter a choice:").strip().capitalize()
-print(" Choose a mode: (Easy, Medium, Hard):")
+difficulty=input("Enter a choice:").strip().capitalize()
+print(" Choose a difficulty: (Easy, Medium, Hard):")
 
-if choice=="Easy":
+if difficulty=="Easy":
+    print("Easy mode selected!")
     questions=5
     max_num= 10
 
-elif choice=="Medium":
-    questions=10
-    max_num=20
-
+elif difficulty=="Medium":
+     print(" Medium mode selected!")
+     questions=10
+     max_num=20
+ 
 elif choice=="Hard":
+    print("Hard mode selected!")
     questions=15
     max_num=50
     
